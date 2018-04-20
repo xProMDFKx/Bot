@@ -177,6 +177,21 @@ client.on("message", async message => {
   embed.setFooter('Regulament', message.guild.iconURL)
   message.channel.sendEmbed(embed)
   }
+  
+      if(command === "magazin") {
+  const embed = new Discord.RichEmbed()
+  let sicon = message.guild.iconURL;
+  embed.addField('✰ | Ce este acest magazin?', `:black_medium_small_square: **MAGAZIN** - Este un channel unde iti poti cumpara diferinte grade pe acest server in schimb la coins`)
+  embed.addField('✰ | King', `:black_small_square: Acest grad cotsa - 7000 coins`)
+  embed.addField('✰ | Supreme', `:black_small_square: Acest grad costa - 5000 coins`)
+  embed.addField('✰ | Legend', `:black_small_square: Acest grad costa - 4000 coins`)
+  embed.addField('✰ | Ultra', `:black_small_square: Acest grad costa - 2000 coins`)
+  embed.addField('✰ | Cum cumpar un grad?', `:black_medium_small_square: **ATENTIE!** - Ca sa cumperi un grad trebuie sa scrii t!credits @« ℑ | xJokerFTW#9244 (suma)`)
+  embed.setColor(0x7CB9E8)
+  embed.setThumbnail(message.guild.iconURL)
+  embed.setFooter('Regulament', message.guild.iconURL)
+  message.channel.sendEmbed(embed)
+  }
  
   if(command === "serverinfo") {
   const embed = new Discord.RichEmbed()
