@@ -153,13 +153,25 @@ client.on("message", async message => {
   if(command === "regulament") {
   const embed = new Discord.RichEmbed()
   let sicon = message.guild.iconURL;
-  embed.addField('✰ | Ce este acest regulament?', `:black_medium_small_square: ***REGULAMENT*** - Totalitatea instrucțiunilor, normelor și regulilor care stabilesc și asigură ordinea și bunul mers al unei organizații, al unei instituții, al unei întreprinderi etc.`)
+  embed.addField('✰ | Ce este acest regulament?', `:black_medium_small_square: **REGULAMENT** - Totalitatea instrucțiunilor, normelor și regulilor care stabilesc și asigură ordinea și bunul mers al unei organizații, al unei instituții, al unei întreprinderi etc.`)
   embed.addField('✰ | Limbajul', `:black_small_square: Nu aveti voie sa injurati/jigniti ✰ | Sanctiunie - Mute 20 min.`)
   embed.addField('✰ | Reclama', `:black_small_square: Nu aveti voie sa faceti reclama in DM si pe server la servere de discord,comunitati etc. ✰ | Sanctiunie - Ban permanent`)
   embed.addField('✰ | Voice', `:black_small_square: Nu aveti voie sa injurati/jigniti sau sa tipati in voice channels ✰ | Sanctiunie - Warn`)
   embed.addField('✰ | Comenzi', `:black_small_square: Nu aveti voie sa folositi comenzi pe #general ci doar pe #comenzi-bot ✰ | Sanctiunie - Warn`)
   embed.addField('✰ | Spam', `:black_small_square: Nu aveti voie sa spamati/prelungiti ✰ | Sanctiunie - Warn`)
   embed.addField('✰ | Mentiuni', `:black_small_square: Nu aveti voie sa mentionati aiurea stafful ✰ | Sanctiunie - Mute 30 min.`)
+  embed.setColor(0x7CB9E8)
+  embed.setThumbnail(message.guild.iconURL)
+  embed.setFooter('Regulament', message.guild.iconURL)
+  message.channel.sendEmbed(embed)
+  }
+  
+    if(command === "informatii") {
+  const embed = new Discord.RichEmbed()
+  let sicon = message.guild.iconURL;
+  embed.addField('✰ | Ce este acest server?', `:black_medium_small_square: **SHIELDZONE** - Este un server creat pe data de 20.04.2018 de catre xJokerFTW, serverul predispune de un staff echilibrat,dar totusi suntem in cautare de Staff! `)
+  embed.addField('✰ | Ce trebuie sa faci ca sa primesti Helper?', `:black_medium_small_square: Trebuie sa mergi la #helper si sa faci o cerere respectand modelul dat. Dar desigur noi avem si niste cerinte, sa ai minim 13 ani, level 3 pe server, o gramatica buna si un limbaj cat mai adecvat.`)
+  embed.addField('✰ | Linkuri Importante', `:black_small_square: Comunitatea cu care noi suntem parteneri - http://painlessgaming.org`)
   embed.setColor(0x7CB9E8)
   embed.setThumbnail(message.guild.iconURL)
   embed.setFooter('Regulament', message.guild.iconURL)
