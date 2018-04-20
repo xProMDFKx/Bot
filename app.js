@@ -174,7 +174,7 @@ client.on("message", async message => {
   embed.addField('✰ | Linkuri Importante', `:black_small_square: Comunitatea cu care noi suntem parteneri - http://painlessgaming.org`)
   embed.setColor(0x7CB9E8)
   embed.setThumbnail(message.guild.iconURL)
-  embed.setFooter('Regulament', message.guild.iconURL)
+  embed.setFooter('Informatii', message.guild.iconURL)
   message.channel.sendEmbed(embed)
   }
   
@@ -189,7 +189,7 @@ client.on("message", async message => {
   embed.addField('✰ | Cum cumpar un grad?', `:black_medium_small_square: **ATENTIE!** - Ca sa cumperi un grad trebuie sa scrii t!credits @« ℑ | xJokerFTW#9244 (suma)`)
   embed.setColor(0x7CB9E8)
   embed.setThumbnail(message.guild.iconURL)
-  embed.setFooter('Regulament', message.guild.iconURL)
+  embed.setFooter('Magazin', message.guild.iconURL)
   message.channel.sendEmbed(embed)
   }
  
