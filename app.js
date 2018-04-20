@@ -194,11 +194,6 @@ client.on("message", async message => {
   }
 });
 
-client.on('ready', () => {
-    console.log("Botul s-a pornit!")
-client.user.setActivity("ShieldZone | sh!help", {type: 2});
-});
-
 client.on('guildMemberAdd', member => {
     let channel = member.guild.channels.find('name', 'welcome-leave');
     let memberavatar = member.user.avatarURL
