@@ -149,6 +149,24 @@ client.on("message", async message => {
   embed.setFooter('Lista pentru ajutor', message.guild.iconURL)
   message.channel.sendEmbed(embed)
   }
+  
+    }
+  
+  if(command === "regulament") {
+  const embed = new Discord.RichEmbed()
+  let sicon = message.guild.iconURL;
+  embed.addField('✰ | Ce este acest regulament?', `:black_medium_small_square: ***REGULAMENT*** - Totalitatea instrucțiunilor, normelor și regulilor care stabilesc și asigură ordinea și bunul mers al unei organizații, al unei instituții, al unei întreprinderi etc.`)
+  embed.addField('✰ | Limbajul', `:black_small_square: Nu aveti voie sa injurati/jigniti ✰ | Sanctiunie - Mute 20 min.`)
+  embed.addField('✰ | Reclama', `:black_small_square: Nu aveti voie sa faceti reclama in DM si pe server la servere de discord,comunitati etc. ✰ | Sanctiunie - Ban permanent`)
+  embed.addField('✰ | Voice', `:black_small_square: Nu aveti voie sa injurati/jigniti sau sa tipati in voice channels ✰ | Sanctiunie - Warn`)
+  embed.addField('✰ | Comenzi', `:black_small_square: Nu aveti voie sa folositi comenzi pe #general ci doar pe #comenzi-bot ✰ | Sanctiunie - Warn`)
+  embed.addField('✰ | Spam', `:black_small_square: Nu aveti voie sa spamati/prelungiti ✰ | Sanctiunie - Warn`)
+  embed.addField('✰ | Mentiuni', `:black_small_square: Nu aveti voie sa mentionati aiurea stafful ✰ | Sanctiunie - Mute 30 min.`)
+  embed.setColor(0x7CB9E8)
+  embed.setThumbnail(message.guild.iconURL)
+  embed.setFooter('Regulament', message.guild.iconURL)
+  message.channel.sendEmbed(embed)
+  }
  
   if(command === "serverinfo") {
   const embed = new Discord.RichEmbed()
