@@ -150,8 +150,6 @@ client.on("message", async message => {
   message.channel.sendEmbed(embed)
   }
   
-    }
-  
   if(command === "regulament") {
   const embed = new Discord.RichEmbed()
   let sicon = message.guild.iconURL;
